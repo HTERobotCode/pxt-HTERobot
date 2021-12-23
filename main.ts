@@ -412,7 +412,7 @@ namespace HTERobot {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     //% group=引脚
     export function ExpandAnalogPinOutPut(index: ExpandDigitalPins, Value: number): void {
-        let pin = ReadExpandAnalogPin(index);
+        let pin = ReadExpandDigitalPin(index);
         pins.analogWritePin(pin, Value);
     }
 
